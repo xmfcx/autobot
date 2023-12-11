@@ -5,10 +5,10 @@ Autoware Discord technical support bot
 ## Installation
 
 ```bash
+sudo apt install libffi-dev libnacl-dev python3-dev python3-pip
+
 pip install openai \
 discord.py
-
-sudo apt install libffi-dev libnacl-dev python3-dev
 ```
 
 ## Usage
@@ -21,6 +21,18 @@ sudo apt install libffi-dev libnacl-dev python3-dev
   - Make sure the channel is selected, not a thread.
 - The URL in the browser will be in the following format:
   - "https://discord.com/channels/{guild_id}/{channel_id}"
+
+## Add the bot to the server
+
+- Go to the following URL:
+  - Change 12345 to the bot's number.
+  - https://discord.com/developers/applications/12345/oauth2/url-generator
+- Select the bot scope.
+  - applications.commands
+  - bot
+- Bot Permissions
+  - Administrator
+- Copy the Generated URL and paste it into a browser.
 
 ### Run the bot
 
